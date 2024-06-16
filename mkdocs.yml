@@ -1,0 +1,59 @@
+---
+
+# Site
+site_name: accesspc
+site_description: Hi, I’m @accesspc'
+site_author: accesspc (Github Organization)
+site_url: https://accesspc.github.io/accesspc/
+copyright: <p>&copy <a href="https://github.com/accesspc"><em>Robertas Reiciunas</em> @accesspc</a><br/><span>This project is licensed under the GPL-3.0 license.</span></p>
+
+# Project
+repo_name: accesspc
+repo_url: https://github.com/accesspc/accesspc
+
+docs_dir: docs/content/
+
+# mkdocs-material theme
+theme:
+  name: material
+  # custom_dir: docs/overrides/
+  favicon: https://avatars.githubusercontent.com/u/6012391
+  logo: https://avatars.githubusercontent.com/u/6012391
+  icon:
+    repo: fontawesome/brands/github
+  # features:
+  #   # - content.action.edit
+  #   # - content.action.view
+  #   # - content.code.annotate
+  #   # - navigation.expand
+  #   # - navigation.instant
+  #   - navigation.tabs
+  #   # - navigation.top
+  palette:
+    - media: '(prefers-color-scheme: dark)'
+      scheme: default
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/eye
+        name: Dark mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: slate
+      primary: teal
+      accent: green
+      toggle:
+        icon: material/eye-outline
+        name: Light mode
+
+markdown_extensions:
+  - toc:
+      anchorlink: true
+
+# Plugins
+plugins:
+  - minify:
+      minify_html: true
+
+# Navigation
+nav:
+  - About me: index.md
