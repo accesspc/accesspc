@@ -57,3 +57,7 @@ plugins:
 # Navigation
 nav:
   - About me: index.md
+  - Projects:
+      - projects/containers.md
+      - projects/home-lab-k8s.md
+      - projects/website-crawl-and-check.md
